@@ -1,0 +1,2 @@
+- my simple portfolio page.
+- made with React, Vite.js and Chakra UI.
