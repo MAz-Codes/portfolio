@@ -1,35 +1,52 @@
 import React from 'react'
-import { Grid, Box, VStack, Heading, Text, Flex } from '@chakra-ui/react'
+import { Grid, Box, VStack, Heading, Text, Flex, Link } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 import Sidebar from '../Elements/Sidebar'
-import Footer from '../Elements/Footer'
 
 
 function Home() {
+
+    const redirect = useNavigate();
   return (
-    <div>
-    <Flex minH="100vh" justifyContent="start" alignItems="center" >
-        <Sidebar />
+    <Box>
+    <Flex minH="100vh" justifyContent="start" alignItems="center"mx="5">
+        <Sidebar/>
         <Box textColor={"white"} padding="20" >
-            <Grid alignItems="center" 
+            <Grid alignItems="center"
             templateColumns={{base: "repeat(1, 1fr)",
                             md: "repeat(2, 1fr)",
                             xl: "repeat(2, 1fr)"}}
             gap={20}
             >
-                <VStack align={"start"} justify="end">
-                    <Heading fontSize={{base: "sm", md:"lg", lg:"xl", xl:"2xl"}} fontFamily={"MontserratBold"} textAlign={"left"}>MISAGH AZIMI</Heading>
-                    <Text textAlign={"left"} fontSize={{base: "xs", md:"sm",lg:"md", xl:"lg"}}>Front-end developer and creator.</Text>
-                    <Text textAlign={"left"} fontSize={{base: "xs", md:"sm",lg:"md", xl:"lg"}}>I create beautiful and responsive<br></br> web apps in Germany.</Text>
+                <VStack align={"start"} justify="end" gap="4">
+                    <Heading fontSize={{base: "sm", md:"lg", xl:"xl"}} fontFamily={"MontserratBold"} textAlign={"left"}>MISAGH AZIMI</Heading>
+                    <Text textAlign={"left"} fontSize={{base: "xs", md:"xs",lg:"sm", xl:"lg"}}>Front-end developer and creator.</Text>
+                    <Text textAlign={"left"} fontSize={{base: "xs", md:"xs",lg:"sm", xl:"lg"}}>I create beautiful and responsive<br></br> web apps in Germany.</Text>
                 </VStack>
                 <VStack align={"end"} gap="10">
-                    <Heading fontFamily={"MontserratBold"} fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"17vh"}}>/WORK</Heading>
-                    <Heading fontFamily={"MontserratBold"} fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"17vh"}}>/ABOUT</Heading>
-                    <Heading fontFamily={"MontserratBold"} fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"17vh"}}>/CONTACT</Heading>
+                    <Link
+                    onClick= {()=>redirect("/work")}
+                    _hover= {{color: "gray.600" }}
+                    fontFamily={"MontserratBold"}
+                    fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"15vh"}}
+                    >/WORK</Link>
+                    <Link
+                    onClick= {()=>redirect("/about")}
+                    _hover= {{color: "gray.600" }}
+                    fontFamily={"MontserratBold"}
+                    fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"15vh"}}
+                    >/ABOUT</Link>
+                    <Link
+                    onClick= {()=>redirect("/contact")}
+                    _hover= {{color: "gray.600" }}
+                    fontFamily={"MontserratBold"}
+                    fontSize={{base: "5xl", md: "7xl", lg:"9xl", xl:"13vh", "2xl":"15vh"}}
+                    >/CONTACT</Link>
                 </VStack>
             </Grid>
         </Box>
     </Flex>
-    </div>
+    </Box>
   )
 }
 

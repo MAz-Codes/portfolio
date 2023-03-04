@@ -4,7 +4,6 @@ import Home from "./Pages/Home";
 import Work from './Pages/Work';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Footer from './Elements/Footer';
 
 
 function App() {
