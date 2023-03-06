@@ -7,16 +7,16 @@ function Footbar() {
                 <Link href="https://linkedin.com/in/misagh-azimi"
                 isExternal
                 _hover= {{color: "gray.400" }}
-                fontSize="sm"
+                fontSize={{base: "xs", md:"0%"}}
                 >LinkedIn</Link>
                 <Link
                 href="https://github.com/mazcoding"
                 isExternal
                 _hover= {{color: "gray.400" }}
-                fontSize="sm"
+                fontSize={{base: "xs", md:"0%"}}
                 >GitHub</Link>
-                <Text fontSize="sm">____________</Text>
-                <Text fontSize="sm">©MA/2023</Text>
+                <Text fontSize={{base: "xs", md:"0%"}}>____________</Text>
+                <Text fontSize={{base: "xs", md:"0%"}}>©MA/2023</Text>
             </Flex>
   );
 }
