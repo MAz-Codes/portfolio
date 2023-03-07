@@ -40,15 +40,15 @@ function About() {
                         After building simple WordPress websites for almost 5 years, I recently decided to take my skills to the next level by learning the front-end languages and a range of tools and frameworks such as:</Text>
 
                         <Grid templateColumns="repeat(9, 1fr)" gap={"1vh"}  >
-                          <Image src="/public/javascript.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-                          <Image src="/public/html.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-                          <Image src="/public/css.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-                          <Image src="/public/react.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-                          <Image src="/public/logomark-colored.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-                          <Image src="/public/node.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-                          <Image src="/public/vite.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-                          <Image src="/public/figma.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-                          <Image src="/public/github.svg" minH="2h" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/javascript.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/html.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
+                          <Image src="/css.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/react.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/logomark-colored.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
+                          <Image src="/node.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/Vite.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+                          <Image src="/figma.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
+                          <Image src="/github.svg" minH="2h" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
                         </Grid>
                         <Text>I hold the Front-End Developer Professional Certificate from "Meta" (formally known as Facebook).</Text>
                         <Text>As a developer and a creator, I'm always looking for new challenges and inspirations to create awesome web apps. I'm excited to take on new projects and deliver high-quality work that not only meets but exceeds expectations.</Text>
