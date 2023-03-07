@@ -4,18 +4,14 @@ import Home from "./Pages/Home";
 import Work from './Pages/Work';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import AnimatedRoutes from './Elements/AnimatedRoutes';
 
 
 function App() {
 
   return (
     <div className="App">
-          <Routes>
-            <Route path="/portfolio" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <AnimatedRoutes />
     </div>
   )
 }
