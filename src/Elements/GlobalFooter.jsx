@@ -28,7 +28,7 @@ function GlobalFooter() {
                 _hover={{color:"gray.900"}}>
                     <FaGithub size={"4vw"} />
                 </Box>
-                <Text fontSize={{base: "xs", md:"0%"}}>____________</Text>
+                <Text fontSize={{base: "xs", md:"0%"}}>__</Text>
                 <Box onClick={() => redirect("/portfolio")}>
                     <Link
                     as={motion.div}
