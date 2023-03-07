@@ -1,9 +1,9 @@
 import React from 'react'
-import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image } from '@chakra-ui/react'
+import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue} from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 import Sidebar from '../Elements/Sidebar'
-import GlobalFooter from '../Elements/GlobalFooter'
+import GlobalHeader from '../Elements/GlobalHeader'
 
 function Home() {
 
@@ -30,11 +30,16 @@ function Home() {
             >
                 {isDesktop ? (
                 <Sidebar/>
-                ) :(<></>)}
-                <Box textColor={"white"} >
+                ) :(<Box position="sticky" w="100%"
+                top="0"
+                zIndex="sticky" >
+                <GlobalHeader/>
+                </Box>)}
+                <Box textColor={"white"}>
                     <Grid
+                    pb={{base:"10vh",md:0}}
                     justifyContent="center"
-                    alignItems="center"
+                    alignItems={{base:"start", md:"center"}}
                     templateColumns={{base: "none",
                     md: "repeat(2, 1fr)",
                     xl: "repeat(2, 1fr)"}}
@@ -42,6 +47,7 @@ function Home() {
                     md: "none",
                     xl: "none"}}>
                         <VStack
+                        pt={{base:"5vh",md:0}}
                         pl={{base:"0",md:"5vw"}}
                         whiteSpace="nowrap"
                         align={{base:"center", md:"start"}}
@@ -72,6 +78,7 @@ function Home() {
                         <VStack
                         pr={{base:"0",md:"5vw"}}
                         align={{base:"center", md:"end"}}
+                        justify="left"
                         gap="10" as={motion.div}
                         layout transition='.5s ease-out'
                         fontSize={{base:"6vh", md: "7xl", lg:"8xl", xl:"15vh"}}>
@@ -108,9 +115,6 @@ function Home() {
                         </VStack>
                     </Grid>
                 </Box>
-                {!isDesktop ? (
-                <GlobalFooter  />
-                ) :(<></>)}
             </Flex>
         </Box>
   )

@@ -3,7 +3,7 @@ import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 import GlobalSidebar from '../Elements/GlobalSidebar'
-import GlobalFooter from '../Elements/GlobalFooter'
+import GlobalHeader from '../Elements/GlobalHeader'
 
 function Work() {
   const redirect = useNavigate();

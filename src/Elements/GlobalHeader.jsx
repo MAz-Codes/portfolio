@@ -4,14 +4,17 @@ import { Flex, Link, Text, Box } from "@chakra-ui/react";
 import {motion} from "framer-motion"
 import {FaLinkedin, FaGithub} from "react-icons/fa"
 
-function GlobalFooter() {
+function GlobalHeader() {
 
     const redirect = useNavigate();
     
   return (
-            <Flex opacity={0.4} 
+    <Box bgGradient='linear(to-r, #5D4157, #A8CABA)' display="flex" justifyContent="center">
+            <Flex
+            
+            opacity={0.4}
             as={motion.div}
-            whileHover={{ opacity:1, transition: {duration: .4} }} p={"3vw"} gap={"5vw"} direction="row"  textColor={"white"} bg="transparent" minW="fit-content" >
+            whileHover={{ opacity:1, transition: {duration: .4} }} py={"3vw"} gap={"5vw"} direction="row"  textColor={"white"} bg="transparent" minW="fit-content" >
                 <Box onClick={() => window.open('https://linkedin.com/in/misagh-azimi', '_blank')}
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}
@@ -70,7 +73,8 @@ function GlobalFooter() {
                     >CONTACT</Link>
                 </Box>
             </Flex>
+      </Box>      
   );
 }
 
-export default GlobalFooter
+export default GlobalHeader

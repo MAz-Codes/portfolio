@@ -3,9 +3,9 @@ import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 import GlobalSidebar from '../Elements/GlobalSidebar'
-import GlobalFooter from '../Elements/GlobalFooter'
+import GlobalHeader from '../Elements/GlobalHeader'
 import Ghostbar from '../Elements/Ghostbar'
-import Ghosthead from '../Elements/Ghosthead'
+import Footbar from '../Elements/Footbar'
 
 function About() {
   const redirect = useNavigate();
@@ -19,22 +19,21 @@ function About() {
         initial={{opacity:0}}
         animate={{opacity:1, transition: {duration: 1} }}
         exit={{opacity:0, transition: {duration: 1} }}>
-                
             <Flex
-            
             direction={{base:"column", md:"row"}}
-            minH="100vh"
+            minH="95vh"
             justifyContent="space-between"
             alignItems="center"
             >
               {!isDesktop ? (
-                <Ghosthead />
-                ) :(<></>)}
-                {isDesktop ? (
-                <GlobalSidebar/>
-                ) :(<></>)}
-                <Box pb="10" textColor={"white"} w="60%" maxW="900px" justify={"center"}>
-                      <VStack as={motion.div} transition='.5s ease-out' gap={10} fontSize={{base:"sm", md: "md", lg:"md", xl:"lg"}}>
+                <Box position="sticky" w="100%"
+                top="0"
+                zIndex="sticky" >
+                <GlobalHeader/>
+                </Box>
+                ) : (<GlobalSidebar/>)}
+                <Box py="10" textColor={"white"} w="60%" maxW="900px" justify={"center"}>
+                      <VStack as={motion.div} transition='.5s ease-out' gap={10} fontSize={{base:"xs", sm:"sm", md: "md", lg:"md", xl:"lg"}}>
                         <Text lineHeight={2}>I am a front-end developer based in Germany. My passion is creating beautiful, responsive and modern websites using frameworks like React and Chakra UI. With a background in audio-visual media and the arts, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
 
                         After building simple WordPress websites for almost 5 years, I recently decided to take my skills to the next level by learning the front-end languages and a range of tools and frameworks such as:</Text>
@@ -57,10 +56,8 @@ function About() {
                 {isDesktop ? (
                 <Ghostbar />
                 ) :(<></>)}
-                {!isDesktop ? (
-                <GlobalFooter  />
-                ) :(<></>)}
             </Flex>
+            <Footbar/>
         </Box>
   )
 }
