@@ -3,7 +3,7 @@ import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 import Sidebar from '../Elements/Sidebar'
-import Footbar from '../Elements/Footbar'
+import GlobalFooter from '../Elements/GlobalFooter'
 
 function Home() {
 
@@ -17,7 +17,7 @@ function Home() {
         <Box
         as={motion.div}
         initial={{opacity:0}}
-        animate={{opacity:1, transition: {duration: 1} }}
+        animate={{opacity:1, transition: {duration: 2} }}
         exit={{opacity:0}}>
             <Flex
             direction={{base:"column", md:"row"}}
@@ -109,7 +109,7 @@ function Home() {
                     </Grid>
                 </Box>
                 {!isDesktop ? (
-                <Footbar  />
+                <GlobalFooter  />
                 ) :(<></>)}
             </Flex>
         </Box>

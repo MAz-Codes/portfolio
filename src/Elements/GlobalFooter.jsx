@@ -9,7 +9,9 @@ function GlobalFooter() {
     const redirect = useNavigate();
     
   return (
-            <Flex p={"3vw"} gap={"5vw"} direction="row"  textColor={"white"} bg="transparent" minW="fit-content" >
+            <Flex opacity={0.4} 
+            as={motion.div}
+            whileHover={{ opacity:1, transition: {duration: .4} }} p={"3vw"} gap={"5vw"} direction="row"  textColor={"white"} bg="transparent" minW="fit-content" >
                 <Box onClick={() => window.open('https://linkedin.com/in/misagh-azimi', '_blank')}
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}

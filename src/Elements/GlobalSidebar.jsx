@@ -17,15 +17,15 @@ function GlobalSidebar() {
                   <Link
                   onClick={() => window.open('https://linkedin.com/in/misagh-azimi', '_blank')}
                   as={motion.div}
-                  whileHover={{ scale: 1.3 }}
+                  whileHover={{ scale: 1.3,  }}
                   whileTap={{ scale: 0.9 }}
                   transition='.2s linear'
                   _hover= {{color: "gray.900", cursor: "pointer"}}
                   fontSize={{base: "0%", md:"sm"}}
-                  >    <FaLinkedin size={"2vw"}/>
+                  >    <FaLinkedin size={"2vw"} style={{minHeight:"15px", maxWidth:"30px"}}/>
                   </Link>
                 </Box>
-                <Box>
+                <Box >
                   <Link
                   onClick={() => window.open("https://github.com/mazcoding", '_blank')}
                   as={motion.div}
@@ -35,14 +35,14 @@ function GlobalSidebar() {
                   _hover= {{color: "gray.900" }}
                   fontSize={{base: "0%", md:"sm"}}
                   >
-                    <FaGithub size={"2vw"}/>
+                    <FaGithub size={"2vw"} style={{minHeight:"15px",maxWidth:"30px"}}/>
                   </Link>
                 </Box>
                 <Text fontSize={{base: "0%", md:"sm"}} transform="rotate(270deg)">____________</Text>
                 <Box onClick={() => redirect("/portfolio")} transform="rotate(270deg)">
                     <Link
                     as={motion.div}
-                    whileHover={{ scale: 1.3 }}
+                    whileHover={{ scale: 1.3, transition: {duration: .6}}}
                     whileTap={{ scale: 0.9 }}
                     transition='.2s linear'
                     _hover= {{color: "gray.900" }}
@@ -52,7 +52,7 @@ function GlobalSidebar() {
                 <Box onClick={() => redirect("/portfolio/work")} transform="rotate(270deg)">
                     <Link
                     as={motion.div}
-                    whileHover={{ scale: 1.3 }}
+                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
                     whileTap={{ scale: 0.9 }}
                     transition='.2s linear'
                     _hover= {{color: "gray.900" }}
@@ -62,7 +62,7 @@ function GlobalSidebar() {
                 <Box onClick={() => redirect("/portfolio/about")} transform="rotate(270deg)">
                     <Link
                     as={motion.div}
-                    whileHover={{ scale: 1.3 }}
+                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
                     whileTap={{ scale: 0.9 }}
                     transition='.2s linear'
                     _hover= {{color: "gray.900" }}
@@ -72,7 +72,7 @@ function GlobalSidebar() {
                 <Box onClick={() => redirect("/portfolio/contact")} transform="rotate(270deg)">
                     <Link
                     as={motion.div}
-                    whileHover={{ scale: 1.3 }}
+                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
                     whileTap={{ scale: 0.9 }}
                     transition='.2s linear'
                     _hover= {{color: "gray.900" }}

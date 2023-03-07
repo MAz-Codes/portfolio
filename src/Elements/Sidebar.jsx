@@ -6,7 +6,9 @@ import {FaLinkedin, FaGithub} from "react-icons/fa"
 function Sidebar() {
 
   return (
-            <Flex direction="column" gap="10vh" justifyContent="center" alignItems="center" textColor={"white"} bg="transparent" minW={{base:"0%", md:"fit-content"}} minH={{base:"0%", md:"fit-content"}}>
+            <Flex opacity={0.2} 
+            as={motion.div}
+            whileHover={{ opacity:1, transition: {duration: .4} }} direction="column" gap="10vh" justifyContent="center" alignItems="center" textColor={"white"} bg="transparent" minW={{base:"0%", md:"fit-content"}} minH={{base:"0%", md:"fit-content"}}>
                <Box>
                   <Link
                   onClick={() => window.open('https://linkedin.com/in/misagh-azimi', '_blank')}
