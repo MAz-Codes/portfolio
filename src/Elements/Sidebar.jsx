@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Link, Text, Box } from "@chakra-ui/react";
+import { Flex, Link, Text, Box, Switch } from "@chakra-ui/react";
 import {motion} from "framer-motion";
 import {FaLinkedin, FaGithub} from "react-icons/fa"
 
@@ -9,6 +9,7 @@ function Sidebar() {
             <Flex opacity={0.2} 
             as={motion.div}
             whileHover={{ opacity:1, transition: {duration: .4} }} direction="column" gap="10vh" justifyContent="center" alignItems="center" textColor={"white"} bg="transparent" minW={{base:"0%", md:"fit-content"}} minH={{base:"0%", md:"fit-content"}}>
+              <Switch size='sm' />
                <Box>
                   <Link
                   onClick={() => window.open('https://linkedin.com/in/misagh-azimi', '_blank')}
