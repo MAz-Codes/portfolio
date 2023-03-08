@@ -16,18 +16,16 @@ function GlobalHeader() {
     <Box bgGradient={bgGradientValue} display="flex" justifyContent="center">
             <Flex
             as={motion.div}
-            whileHover={{ opacity:1, transition: {duration: .4} }} py={"3vw"} gap={"5vw"} direction="row"  textColor={"white"} bg="transparent" minW="fit-content" >
-                 <HStack spacing="0.7">
+            whileHover={{ opacity:1, transition: {duration: .4} }} py={"3vw"} gap={"5vw"} direction="row"  textColor={isClicked ? 'gray.500' : "white"}  bg="transparent" minW="fit-content" >
+                 <HStack spacing="1vw">
                     <FaSun size="5"/>
                     <Switch
-                    colorScheme="gray"
+                    colorScheme="blue"
                     size="sm"
                     isChecked={isClicked}
                     onChange={handleClick}/>
                     <FaMoon size="5"/>
                </HStack>
-                
-  
                 <Box onClick={() => redirect("/portfolio")}>
                     <Link
                     as={motion.div}

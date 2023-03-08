@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
@@ -6,8 +6,10 @@ import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
 import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
+import { ThemeContext } from '../Elements/AnimatedRoutes';
 
 function About() {
+  const {isClicked, handleClick} = useContext(ThemeContext)
   const redirect = useNavigate();
   const isDesktop = useBreakpointValue({
       base: false,
@@ -21,6 +23,7 @@ function About() {
         exit={{opacity:0, transition: {duration: 1} }}>
             <Flex
             direction={{base:"column", md:"row"}}
+            textColor={isClicked ? 'gray.500' : "white"} 
             minH="95vh"
             justifyContent="space-between"
             alignItems="center"

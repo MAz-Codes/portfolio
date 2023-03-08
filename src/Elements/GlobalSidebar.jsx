@@ -18,14 +18,14 @@ function GlobalSidebar() {
             gap="7vh"
             justifyContent="center"
             alignItems="center"
-            textColor={"white"}
+            textColor={isClicked ? 'gray.500' : "white"} 
             bg="transparent"
             minW={{base:"0%", md:"fit-content"}}
             minH={{base:"0%", md:"fit-content"}}>
               <VStack>
                     <FaSun size="9"/>
                     <Switch
-                    colorScheme="gray"
+                    colorScheme="blue"
                     transform="rotate(90deg)"
                     size="sm"
                     isChecked={isClicked}
