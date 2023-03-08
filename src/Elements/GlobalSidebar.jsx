@@ -18,7 +18,7 @@ function GlobalSidebar() {
             gap="7vh"
             justifyContent="center"
             alignItems="center"
-            textColor={isClicked ? 'gray.500' : "white"} 
+            textColor={isClicked ? 'gray.500' : "white"}
             bg="transparent"
             minW={{base:"0%", md:"fit-content"}}
             minH={{base:"0%", md:"fit-content"}}>
@@ -58,47 +58,47 @@ function GlobalSidebar() {
                     <FaGithub size={"2vw"} style={{minHeight:"15px",maxWidth:"30px"}}/>
                   </Link>
                 </Box>
-                <Text fontSize={{base: "0%", md:"sm"}} transform="rotate(270deg)">______</Text>
-                <Box onClick={() => redirect("/portfolio")} transform="rotate(270deg)">
-                    <Link
-                    as={motion.div}
-                    whileHover={{ scale: 1.3, transition: {duration: .6}}}
-                    whileTap={{ scale: 0.9 }}
-                    transition='.2s linear'
-                    _hover= {{color: "gray.900" }}
-                    fontSize={{base: "0", md:"sm"}}
-                    >HOME</Link>
-                </Box>
-                <Box onClick={() => redirect("/portfolio/work")} transform="rotate(270deg)">
-                    <Link
-                    as={motion.div}
-                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
-                    whileTap={{ scale: 0.9 }}
-                    transition='.2s linear'
-                    _hover= {{color: "gray.900" }}
-                    fontSize={{base: "0", md:"sm"}}
-                    >WORK</Link>
-                </Box>
-                <Box onClick={() => redirect("/portfolio/about")} transform="rotate(270deg)">
-                    <Link
-                    as={motion.div}
-                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
-                    whileTap={{ scale: 0.9 }}
-                    transition='.2s linear'
-                    _hover= {{color: "gray.900" }}
-                    fontSize={{base: "0", md:"sm"}}
-                    >ABOUT</Link>
-                </Box>
-                <Box onClick={() => redirect("/portfolio/contact")} transform="rotate(270deg)">
-                    <Link
-                    as={motion.div}
-                    whileHover={{ scale: 1.3, transition: {duration: .6} }}
-                    whileTap={{ scale: 0.9 }}
-                    transition='.2s linear'
-                    _hover= {{color: "gray.900" }}
-                    fontSize={{base: "0", md:"sm"}}
-                    >CONTACT</Link>
-                </Box>
+                <Text fontSize={{base: "0%", md:"sm"}} transform="rotate(270deg)">---</Text>
+                  <Box onClick={() => redirect("/portfolio")} transform="rotate(270deg)">
+                      <Link
+                      as={motion.div}
+                      whileHover={{ scale: 1.3, transition: {duration: .6}}}
+                      whileTap={{ scale: 0.9 }}
+                      transition='.2s linear'
+                      _hover= {{color: "gray.900" }}
+                      fontSize={{base: "0", md:"xs"}}
+                      >HOME</Link>
+                  </Box>
+                  <Box onClick={() => redirect("/portfolio/work")} transform="rotate(270deg)">
+                      <Link
+                      as={motion.div}
+                      whileHover={{ scale: 1.3, transition: {duration: .6} }}
+                      whileTap={{ scale: 0.9 }}
+                      transition='.2s linear'
+                      _hover= {{color: "gray.900" }}
+                      fontSize={{base: "0", md:"xs"}}
+                      >WORK</Link>
+                  </Box>
+                  <Box onClick={() => redirect("/portfolio/about")} transform="rotate(270deg)">
+                      <Link
+                      as={motion.div}
+                      whileHover={{ scale: 1.3, transition: {duration: .6} }}
+                      whileTap={{ scale: 0.9 }}
+                      transition='.2s linear'
+                      _hover= {{color: "gray.900" }}
+                      fontSize={{base: "0", md:"xs"}}
+                      >ABOUT</Link>
+                  </Box>
+                  <Box onClick={() => redirect("/portfolio/contact")} transform="rotate(270deg)">
+                      <Link
+                      as={motion.div}
+                      whileHover={{ scale: 1.3, transition: {duration: .6} }}
+                      whileTap={{ scale: 0.9 }}
+                      transition='.2s linear'
+                      _hover= {{color: "gray.900" }}
+                      fontSize={{base: "0", md:"xs"}}
+                      >CONTACT</Link>
+                  </Box>
             </Flex>
   );
 }
