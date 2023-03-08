@@ -2,8 +2,9 @@ import React from 'react'
 import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue} from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
-import Sidebar from '../Elements/Sidebar'
+import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
+import Footbar from '../Elements/Footbar'
 
 function Home() {
 
@@ -21,7 +22,7 @@ function Home() {
         exit={{opacity:0}}>
             <Flex
             direction={{base:"column", md:"row"}}
-            minH="100vh"
+            minH="95vh"
             justifyContent={{base:"space-between",
             md:"start",
             lg:"start", 
@@ -29,7 +30,7 @@ function Home() {
             alignItems="center"
             >
                 {isDesktop ? (
-                <Sidebar/>
+                <GlobalSidebar/>
                 ) :(<Box position="sticky" w="100%"
                 top="0"
                 zIndex="sticky" >
@@ -37,7 +38,7 @@ function Home() {
                 </Box>)}
                 <Box textColor={"white"}>
                     <Grid
-                    pb={{base:"10vh",md:0}}
+                    pb={{base:"5vh",md:0}}
                     justifyContent="center"
                     alignItems={{base:"start", md:"center"}}
                     templateColumns={{base: "none",
@@ -116,6 +117,7 @@ function Home() {
                     </Grid>
                 </Box>
             </Flex>
+            <Footbar/>
         </Box>
   )
 }
