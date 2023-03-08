@@ -23,7 +23,6 @@ function About() {
         exit={{opacity:0, transition: {duration: 1} }}>
             <Flex
             direction={{base:"column", md:"row"}}
-            textColor={isClicked ? 'gray.500' : "white"} 
             minH="95vh"
             justifyContent="space-between"
             alignItems="center"
@@ -35,7 +34,7 @@ function About() {
                 <GlobalHeader/>
                 </Box>
                 ) : (<GlobalSidebar/>)}
-                <Box py="10" textColor={"white"} w="60%" maxW="900px" justify={"center"}>
+                <Box py="10" textColor={isClicked ? 'gray.500' : "white"}  w="60%" maxW="900px" justify={"center"}>
                       <VStack as={motion.div} transition='.5s ease-out' gap={10} fontSize={{base:"xs", sm:"sm", md: "md", lg:"md", xl:"lg"}}>
                         <Text lineHeight={2}>I am a front-end developer based in Germany. My passion is creating beautiful, responsive and modern websites using frameworks like React and Chakra UI. With a background in audio-visual media and the arts, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
 
