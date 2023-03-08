@@ -83,7 +83,7 @@ function Home() {
                         justify="left"
                         gap="10" as={motion.div}
                         layout transition='.5s ease-out'
-                        fontSize={{base:"6vh", md: "7xl", lg:"8xl", xl:"15vh"}}>
+                        fontSize={{base:"6vh", md: "7xl", lg:"8xl", xl:"13vh"}}>
                             <Link
                             as={motion.div}
                             whileHover={{ scale: 1.1 }}
