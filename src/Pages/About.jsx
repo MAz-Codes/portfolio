@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image } from '@chakra-ui/react'
-import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
@@ -8,7 +7,6 @@ import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
 
 function About() {
-  const redirect = useNavigate();
   const isDesktop = useBreakpointValue({
       base: false,
       md: true,
@@ -28,7 +26,7 @@ function About() {
               {!isDesktop ? (
                 <Box position="sticky" w="100%"
                 top="0"
-                zIndex="sticky" >
+                zIndex="sticky" > 
                 <GlobalHeader/>
                 </Box>
                 ) : (<GlobalSidebar/>)}
