@@ -40,7 +40,7 @@ function About() {
 
                         After building simple WordPress websites for almost 5 years, I recently decided to take my skills to the next level by learning the front-end languages and a range of tools and frameworks such as:</Text>
 
-                        <Grid opacity={isClicked ? 0.6 : 1} templateColumns="repeat(9, 1fr)" gap={"1vh"}  >
+                        <Grid as={motion.div} transition='.5s ease-out' opacity={isClicked ? 0.7 : 1} templateColumns="repeat(9, 1fr)" gap={"1vh"}  >
                           <Image src="javascript.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
                           <Image src="html.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
                           <Image src="css.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
