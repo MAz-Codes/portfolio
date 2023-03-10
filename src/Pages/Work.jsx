@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Grid, Box, HStack, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image } from '@chakra-ui/react'
+import { Grid, Box, Stack, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image, Button } from '@chakra-ui/react'
 import { motion} from "framer-motion"
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
@@ -33,17 +33,21 @@ return (
             <GlobalHeader/>
             </Box>) : (<GlobalSidebar/>
             )}
-            <Box py="10" textColor={isClicked ? 'gray.400' : "white"} w="60%" maxW="900px" justify={"center"}>
-              <HStack justify="space-between">
-                <VStack>
-               
-                  <Text>here</Text>
+            <Box py="10" textColor={isClicked ? 'gray.400' : "white"} w="70vw" justify={"center"}>
+              <Stack justify="space-between" gap="2vw"  direction={{base:"column", md:"row"}}>
+                <VStack gap="2vw">
+                  <VStack>
+                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='public/TaraFrontTEXT.png' />
+                    <Button bg="transparent" border="1px" _hover={{bgColor:"#dbb2d7", borderColor:"transparent"}}fontFamily='Montserratbold'>MORE</Button>
+                  </VStack>
                 </VStack>
-                <VStack>
-                
-                  <Text>will be works</Text>
+                <VStack gap="2vw">
+                  <VStack>
+                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='public/nbaFrontTEXT.png' />
+                    <Button bg="transparent" border="1px" _hover={{bgColor:"#badbce", borderColor:"transparent"}}fontFamily='Montserratbold'>MORE</Button>
+                  </VStack>
                 </VStack>
-              </HStack>
+              </Stack>
             </Box>
             <Ghostbar />
           </Flex>
