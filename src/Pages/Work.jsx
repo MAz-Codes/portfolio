@@ -37,13 +37,13 @@ return (
               <Stack justify="space-between" gap="2vw"  direction={{base:"column", md:"row"}}>
                 <VStack gap="2vw">
                   <VStack>
-                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='public/TaraFrontTEXT.png' />
+                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='TaraFrontTEXT.png' />
                     <Button bg="transparent" border="1px" _hover={{bgColor:"#dbb2d7", borderColor:"transparent"}}fontFamily='Montserratbold'>MORE</Button>
                   </VStack>
                 </VStack>
                 <VStack gap="2vw">
                   <VStack>
-                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='public/nbaFrontTEXT.png' />
+                    <Image boxShadow="dark-lg" transition='.5s ease-out' opacity={isClicked ? 0.8 : 1} borderRadius="1vh" src='nbaFrontTEXT.png' />
                     <Button bg="transparent" border="1px" _hover={{bgColor:"#badbce", borderColor:"transparent"}}fontFamily='Montserratbold'>MORE</Button>
                   </VStack>
                 </VStack>
