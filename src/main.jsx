@@ -7,10 +7,10 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <Router>
-    <ChakraProvider>
-      <App/>
-    </ChakraProvider>
-  </Router>
-</React.StrictMode>,
-)
+    <Router>
+      <ChakraProvider>
+        <App/>
+      </ChakraProvider>
+    </Router>
+  </React.StrictMode>,
+  )

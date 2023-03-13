@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Grid, Box, Stack, VStack, Heading, Text, Flex, Link, useBreakpointValue, Image, Button } from '@chakra-ui/react'
+import { Box, Stack, VStack, Flex, useBreakpointValue, Image, Button } from '@chakra-ui/react'
 import { motion} from "framer-motion"
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'

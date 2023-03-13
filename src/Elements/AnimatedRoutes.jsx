@@ -16,6 +16,7 @@ function AnimatedRoutes() {
     const handleClick = () => {
       setIsClicked(!isClicked);
     };
+
     useEffect(() => {
       document.body.style.background = isClicked ? "linear-gradient(to right, #000000, #2C3E50)" : "linear-gradient(to right, #5D4157, #A8CABA)";
     }, [isClicked]);

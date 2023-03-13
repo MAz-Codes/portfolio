@@ -26,7 +26,7 @@ function Home() {
             minH="95vh"
             justifyContent={{base:"space-between",
             md:"start",
-            lg:"start", 
+            lg:"start",
             "2xl":"center"}}
             alignItems="center"
             >
