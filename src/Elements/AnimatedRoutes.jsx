@@ -24,14 +24,14 @@ function AnimatedRoutes() {
   return (
     <ThemeContext.Provider value={{ isClicked, handleClick }}>
       <AnimatePresence >
-          <div>
-              <Routes location={location} key={location.pathname}>
-                  <Route path="/portfolio" element={<Home />} />
-                  <Route path="/portfolio/work" element={<Work />} />
-                  <Route path="/portfolio/about" element={<About />} />
-                  <Route path="/portfolio/contact" element={<Contact />} />
-              </Routes>
-          </div>
+        <div>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/portfolio" element={<Home />} />
+            <Route path="/portfolio/work" element={<Work />} />
+            <Route path="/portfolio/about" element={<About />} />
+            <Route path="/portfolio/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </AnimatePresence>
     </ThemeContext.Provider>
   )

@@ -1,12 +1,13 @@
 import React, {useContext} from 'react'
 import { Box, VStack, HStack, Text, Flex, useBreakpointValue, Heading } from '@chakra-ui/react'
 import { motion} from "framer-motion"
+import { FaEnvelope, FaPhoneSquare } from 'react-icons/fa'
+
+import { ThemeContext } from '../Elements/AnimatedRoutes';
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
 import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
-import { FaEnvelope, FaPhoneSquare } from 'react-icons/fa'
-import { ThemeContext } from '../Elements/AnimatedRoutes';
 
 function Contact() {
   const {isClicked, handleClick} = useContext(ThemeContext)
@@ -73,7 +74,7 @@ return (
         as={motion.div}
         transition='.5s ease-out'
         fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
-        > The contents of this website have been created by Misagh Azimi, and are intended solely for the purpose of showcasing my work and skills as a front-end developer. This website does not collect any personal information from its visitors, and no cookies or tracking technologies are activly used by the creator.
+        > The contents of this website have been created by me, Misagh Azimi, and are intended solely for the purpose of showcasing my work and skills as a front-end developer. This website does not actively collect any personal information and/or data from its visitors.
 
         If you have any questions or concerns about this website, please feel free to contact me using the information provided above.</Text>
       </Box>

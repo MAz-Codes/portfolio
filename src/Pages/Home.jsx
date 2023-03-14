@@ -2,10 +2,13 @@ import React, {useContext} from 'react'
 import { Grid, Box, VStack, Heading, Text, Flex, Link, useBreakpointValue} from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
+
+import { ThemeContext } from '../Elements/AnimatedRoutes';
+
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
 import Footbar from '../Elements/Footbar'
-import { ThemeContext } from '../Elements/AnimatedRoutes';
+
 
 function Home() {
     const {isClicked, handleClick} = useContext(ThemeContext)

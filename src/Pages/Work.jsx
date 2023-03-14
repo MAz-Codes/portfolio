@@ -1,11 +1,13 @@
 import React, {useContext} from 'react'
 import { Box, Stack, VStack, Flex, useBreakpointValue, Image, Button } from '@chakra-ui/react'
 import { motion} from "framer-motion"
+
+import { ThemeContext } from '../Elements/AnimatedRoutes';
+
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
 import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
-import { ThemeContext } from '../Elements/AnimatedRoutes';
 
 function Work() {
   const {isClicked, handleClick} = useContext(ThemeContext)
