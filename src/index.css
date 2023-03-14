@@ -1,5 +1,4 @@
 :root {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -67,6 +66,13 @@ button:focus-visible {
   font-family: 'MontserratBold';
   src: url('fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url('fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
