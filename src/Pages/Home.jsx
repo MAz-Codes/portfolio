@@ -89,7 +89,7 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/portfolio/work")}
+                            onClick= {()=>redirect("/work")}
                             _hover= {{color: "gray.600" }}
                             fontFamily="Oswald-Regular"
                             >
@@ -100,7 +100,7 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/portfolio/about")}
+                            onClick= {()=>redirect("/about")}
                             _hover= {{color: "gray.600" }}
                             fontFamily="Oswald-Regular">
                             /ABOUT
@@ -110,7 +110,7 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/portfolio/contact")}
+                            onClick= {()=>redirect("/contact")}
                             _hover= {{color: "gray.600" }}
                             fontFamily="Oswald-Regular">
                             /CONTACT

@@ -35,7 +35,7 @@ function GlobalHeader() {
                 onChange={handleClick}/>
                 <FaMoon size="5"/>
             </HStack>
-            <Box onClick={() => redirect("/portfolio")}>
+            <Box onClick={() => redirect("/")}>
                 <Link
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}
@@ -45,7 +45,7 @@ function GlobalHeader() {
                 fontSize={{base: "xs", md:"0%"}}
                 >HOME</Link>
             </Box>
-            <Box onClick={() => redirect("/portfolio/work")}>
+            <Box onClick={() => redirect("/work")}>
                 <Link
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}
@@ -55,7 +55,7 @@ function GlobalHeader() {
                 fontSize={{base: "xs", md:"0%"}}
                 >WORK</Link>
             </Box>
-            <Box onClick={() => redirect("/portfolio/about")}>
+            <Box onClick={() => redirect("/about")}>
                 <Link
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}
@@ -65,7 +65,7 @@ function GlobalHeader() {
                 fontSize={{base: "xs", md:"0%"}}
                 >ABOUT</Link>
             </Box>
-            <Box onClick={() => redirect("/portfolio/contact")}>
+            <Box onClick={() => redirect("/contact")}>
                 <Link
                 as={motion.div}
                 whileHover={{ scale: 1.3 }}
