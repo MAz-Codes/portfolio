@@ -49,6 +49,7 @@ return (
       maxW="900px"
       justify={"center"}>
         <VStack
+        
         as={motion.div}
         transition='.5s ease-out'
         gap={10}

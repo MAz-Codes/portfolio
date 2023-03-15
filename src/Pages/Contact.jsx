@@ -71,6 +71,7 @@ return (
         fontSize={{base:"sm", md:"md",lg:"lg", xl:"lg"}}
         >Disclaimer:</Heading>
         <Text
+        lineHeight={1.5} textAlign="left"
         as={motion.div}
         transition='.5s ease-out'
         fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
