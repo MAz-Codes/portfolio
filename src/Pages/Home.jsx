@@ -27,19 +27,22 @@ function Home() {
             <Flex
             direction={{base:"column", md:"row"}}
             minH="95vh"
-            justifyContent={{base:"space-between",
-            md:"start",
-            lg:"start",
-            "2xl":"center"}}
+            justifyContent="space-between"
             alignItems="center"
             >
                 {isDesktop ? (
-                <GlobalSidebar/>
-                ) :(<Box position="sticky" w="100%"
-                top="0"
-                zIndex="sticky" >
-                <GlobalHeader/>
-                </Box>)}
+                    <Box>
+                        <GlobalSidebar/>
+                    </Box>
+                ) :(
+                    <Box
+                    position="sticky"
+                    w="100%"
+                    top="0"
+                    zIndex="sticky" >
+                        <GlobalHeader/>
+                    </Box>
+                )}
                 <Box textColor={isClicked ? 'gray.400' : "white"}>
                     <Grid
                     pb={{base:"5vh",md:0}}
@@ -52,16 +55,15 @@ function Home() {
                     md: "none",
                     xl: "none"}}>
                         <VStack
-                        pt={{base:"5vh",md:0}}
-                        pl={{base:"0",md:"5vw"}}
+                        pl={{base:"0",sm:"1vw", md:"3vw",lg:"5vw", xl:"7vw", "2xl":"10vw"}}
                         whiteSpace="nowrap"
                         align={{base:"center", md:"start"}}
                         gap="4">
                             <Heading
                             as={motion.div}
                             transition='.5s ease-out'
-                            fontSize={{base: "md", md:"xl",lg:"2xl", xl:"3xl"}}
-                            fontFamily={"MontserratBold"}
+                            fontSize={{base: "md", md:"xl",lg:"2xl", xl:"5xl", "2xl":"6xl"}}
+                            fontFamily="Oswald-Regular"
                             textAlign={"left"}>
                             MISAGH AZIMI
                             </Heading>
@@ -69,32 +71,28 @@ function Home() {
                             as={motion.div}
                             transition='.5s ease-out'
                             textAlign={"left"}
-                            fontSize={{base:"sm",md:"sm",lg:"md", xl:"lg"}}>
-                            Front-end developer and creator.
-                            </Text>
-                            <Text
-                            as={motion.div}
-                            transition='.5s ease-out'
-                            textAlign={"left"}
-                            fontSize={{base:"sm", md:"sm",lg:"md", xl:"lg"}}>
-                            I create web apps using React.
+                            fontSize={{base:"sm",md:"sm",lg:"md", xl:"lg", "2xl":"2xl"}}>
+                            Front-end developer and media creator.
                             </Text>
                         </VStack>
                         <VStack
-                        pr={{base:"0",md:"5vw"}}
+                        mb={{base:"10vh",md:"0"}}
+                        mr={{base:"0",sm:"5vw", md:"8vw",lg:"10vw", xl:"12vw", "2xl":"15vw"}}
+                        pl={{base:"0",md:"5vw"}}
                         align={{base:"center", md:"end"}}
-                        justify="left"
-                        gap="10" as={motion.div}
-                        layout transition='.5s ease-out'
+                        as={motion.div}
+                        layout
+                        transition='.5s ease-out'
                         fontSize={{base:"6vh", md: "7xl", lg:"8xl", xl:"15vh"}}>
                             <Link
                             as={motion.div}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/work")}
+                            onClick= {()=>redirect("/portfolio/work")}
                             _hover= {{color: "gray.600" }}
-                            fontFamily={"MontserratBold"}>
+                            fontFamily="Oswald-Regular"
+                            >
                             /WORK
                             </Link>
                             <Link
@@ -102,9 +100,9 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/about")}
+                            onClick= {()=>redirect("/portfolio/about")}
                             _hover= {{color: "gray.600" }}
-                            fontFamily={"MontserratBold"}>
+                            fontFamily="Oswald-Regular">
                             /ABOUT
                             </Link>
                             <Link
@@ -112,9 +110,9 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition='.5s linear'
-                            onClick= {()=>redirect("/contact")}
+                            onClick= {()=>redirect("/portfolio/contact")}
                             _hover= {{color: "gray.600" }}
-                            fontFamily={"MontserratBold"}>
+                            fontFamily="Oswald-Regular">
                             /CONTACT
                             </Link>
                         </VStack>

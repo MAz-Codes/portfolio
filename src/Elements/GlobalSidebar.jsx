@@ -64,7 +64,7 @@ function GlobalSidebar() {
         </Link>
       </Box>
       <Text fontSize={{base: "0%", md:"sm"}} transform="rotate(270deg)">---</Text>
-      <Box onClick={() => redirect("/")} transform="rotate(270deg)">
+      <Box onClick={() => redirect("/portfolio")} transform="rotate(270deg)">
         <Link
         as={motion.div}
         whileHover={{ scale: 1.3, transition: {duration: .6}}}
@@ -74,7 +74,7 @@ function GlobalSidebar() {
         fontSize={{base: "0", md:"xs"}}
         >HOME</Link>
       </Box>
-      <Box onClick={() => redirect("/work")} transform="rotate(270deg)">
+      <Box onClick={() => redirect("/portfolio/work")} transform="rotate(270deg)">
         <Link
         as={motion.div}
         whileHover={{ scale: 1.3, transition: {duration: .6} }}
@@ -84,7 +84,7 @@ function GlobalSidebar() {
         fontSize={{base: "0", md:"xs"}}
         >WORK</Link>
       </Box>
-      <Box onClick={() => redirect("/about")} transform="rotate(270deg)">
+      <Box onClick={() => redirect("/portfolio/about")} transform="rotate(270deg)">
         <Link
         as={motion.div}
         whileHover={{ scale: 1.3, transition: {duration: .6} }}
@@ -94,7 +94,7 @@ function GlobalSidebar() {
         fontSize={{base: "0", md:"xs"}}
         >ABOUT</Link>
       </Box>
-      <Box onClick={() => redirect("/contact")} transform="rotate(270deg)">
+      <Box onClick={() => redirect("/portfolio/contact")} transform="rotate(270deg)">
         <Link
         as={motion.div}
         whileHover={{ scale: 1.3, transition: {duration: .6} }}

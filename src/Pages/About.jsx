@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { Grid, Box, VStack, Text, Flex, useBreakpointValue, Image } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
+
 import GlobalSidebar from '../Elements/GlobalSidebar'
 import GlobalHeader from '../Elements/GlobalHeader'
 import Ghostbar from '../Elements/Ghostbar'
@@ -36,7 +37,10 @@ return (
         zIndex="sticky" >
           <GlobalHeader/>
         </Box>
-        ) : (<GlobalSidebar/>
+        ) : (<GlobalSidebar position="sticky"
+        w="100%"
+        left="0"
+        zIndex="sticky" />
       )}
       <Box
       py="10"
@@ -49,8 +53,11 @@ return (
         transition='.5s ease-out'
         gap={10}
         fontSize={{base:"xs", sm:"sm", md: "md", lg:"md", xl:"lg"}}>
-          <Text lineHeight={2}>
-          I am a front-end developer based in Germany. My passion is creating beautiful, responsive and modern websites using frameworks like React and Chakra UI. With a background in audio-visual media and the arts, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
+          <Text lineHeight={1.5} textAlign="left">
+          I love bringing ideas to life through technology and creativity. I feel fortunate to have found a field that allows me to combine my interests with my professional work, and I'm grateful for the opportunity to share my passion with others.<br/>
+          <br />
+
+          I create responsive and modern websites using frameworks like React and Chakra UI. With a background in audio-visual media and the arts, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
 
           After building simple WordPress websites for almost 5 years, I recently decided to take my skills to the next level by learning the front-end languages and a range of tools and frameworks such as:</Text>
 
@@ -59,19 +66,19 @@ return (
           transition='.5s ease-out'
           opacity={isClicked ? 0.7 : 1}
           templateColumns="repeat(9, 1fr)"
-          gap={"1vh"}  >
-            <Image src="javascript.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-            <Image src="html.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-            <Image src="css.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-            <Image src="react.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-            <Image src="logomark-colored.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-            <Image src="node.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-            <Image src="Vite.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
-            <Image src="figma.svg" minH="2vh" maxH={{base:"4vh", md:"6vh", xl:"7vh"}} />
-            <Image src="github.svg" minH="2h" maxH={{base:"4vh", md:"6vh", xl:"7vh"}}/>
+          gap={"4vh"}  >
+            <Image src="javascript.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="html.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
+            <Image src="css.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="react.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="logomark-colored.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
+            <Image src="node.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="Vite.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="figma.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
+            <Image src="github.svg" minH="2h" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
           </Grid>
-          <Text>I hold the Front-End Developer Professional Certificate from "Meta" (formally known as Facebook).</Text>
-          <Text>As a developer and a creator, I'm always looking for new challenges and inspirations to create awesome web apps. I'm excited to take on new projects and deliver high-quality work that not only meets but exceeds expectations.</Text>
+          <Text textAlign="left">I hold the Front-End Developer Professional Certificate from "Meta" (formally known as Facebook).<br/><br/>
+          As a developer and a creator, I'm always looking for new challenges and inspirations to create awesome web apps. I'm excited to take on new projects and deliver high-quality work that not only meets but exceeds expectations.</Text>
         </VStack>
       </Box>
         {isDesktop ? (
